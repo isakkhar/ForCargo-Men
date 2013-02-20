@@ -1,0 +1,33 @@
+# apache
+# deployment
+# deployment/apache2
+# deployment/apache2/sites-available
+# deployment/apache2/sites-enabled
+locale
+locale/fi
+locale/fi/LC_MESSAGES
+locale/ru
+locale/ru/LC_MESSAGES
+locale/sv
+locale/sv/LC_MESSAGES
+middleware
+orders
+registration
+startpage
+startpage/templatetags
+staticfiles
+staticfiles/css
+staticfiles/img
+staticfiles/img/DeKaSa
+staticfiles/img/admin
+staticfiles/img/flags
+staticfiles/img/partners
+staticfiles/js
+staticfiles/js/admin
+templates
+templates/clients
+templates/infostatic
+templates/orders
+templates/registration
+# testdrive
+viewtools

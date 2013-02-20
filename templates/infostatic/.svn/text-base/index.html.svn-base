@@ -1,0 +1,43 @@
+{% extends "infostatic/base_site.html" %}
+{% load i18n %}
+{% load tabind %}
+
+{% block extrastyle %}
+  <link rel="stylesheet" type="text/css" href="/staticfiles/css/right_img.css" />
+{% endblock %}
+{% block right_sidebar %}
+  <div id="right_img_bar">
+    <img width="230" height="307" src="/staticfiles/img/DeKaSa/truck.JPG"
+      alt="{% trans 'Truck in DeKaSa' %}"
+      title="{% trans 'Truck in DeKaSa' %}" />
+  </div>
+{% endblock %}
+{% block content %}
+  <div id="content-main">
+    <h2>{% trans 'DeKaSa-Service OY' %}</h2>
+    <p>{% trans 'DeKaSa-Service OY car and truck repairing company is located in Helsinki near Ring III road (Kehä III, road E18, or road 50). ' %}
+       {% trans 'DeKaSa-Service OY provides all kinds of car and truck services, works, repairs, and cleaning. ' %}
+       {% trans 'These services are described in section ' %}
+       <a tabindex="{% inc %}" href="/service/">{% trans 'Services' %}</a>
+       {% trans ' more detailed. ' %}
+       {% trans 'We will understand you an English, Russian or Finnish.' %}
+    </p>
+    <p>{% trans 'Our address, map and our contact information you can find on the page ' %}
+       <a tabindex="{% inc %}" href="/contacts/">{% trans 'Contacts' %}</a>{% trans '.' %}
+    </p>
+    <p>{% trans 'The brief history of DeKaSa-Service OY company and information about our partners is presented in section ' %}
+       <a tabindex="{% inc %}" href="/aboutus/">{% trans 'About us' %}</a>{% trans '.' %}
+    </p>
+    <p><a tabindex="{% inc %}" href="/orders/">{% trans 'Orders' %}</a>
+       {% trans ' functions require authentication. ' %}
+       {% trans 'If you are a new user you can register via e-mail by link '%}
+       <a tabindex="{% inc %}" href="/accounts/register/">
+       {% trans 'Registration' %}</a>{% trans '. ' %}
+       {% trans 'Registration via SMS will be possible later, in the next version.' %}
+    </p>
+    <p>{% trans 'You can also read '%}<a tabindex="{% inc %}" href="/logneed/">
+       {% trans 'why login is required' %}</a>{% trans '.' %}
+    </p>
+    <!-- 57165fab5425944d77bf14a1059fdcb1 -->
+  </div>
+{% endblock %}

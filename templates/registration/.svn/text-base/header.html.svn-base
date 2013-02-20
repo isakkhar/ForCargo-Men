@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ LANGUAGE_CODE }}" xml:lang="{{ LANGUAGE_CODE }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<title>{% block title %}Login | DeKaSa Service OY{% endblock %}</title>
+<link rel="stylesheet" type="text/css" href="{% block stylesheet %}/staticfiles/css/base.css{% endblock %}" />
+{% block extrastyle %}{% endblock %}
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="{% block stylesheet_ie %}/staticfiles/css/ie.css{% endblock %}" /><![endif]-->
+{% if LANGUAGE_BIDI %}<link rel="stylesheet" type="text/css" href="{% block stylesheet_rtl %}/staticfiles/css/rtl.css{% endblock %}" />{% endif %}
+{% block extrahead %}{% endblock %}
+{% block blockbots %}<meta name="robots" content="NONE,NOARCHIVE" />{% endblock %}
+</head>
+
+{% load i18n %}
+{% load tabind %}
+<body class="{% block bodyclass %}{% endblock %}">
+<!-- {% inc 0 %} -->
+<!-- Container -->
+  <div id="container">
+    <!-- Header -->
+    <div id="header">
+      <div id="branding">
+        {% block branding %}
+        {% endblock %}
+      </div>
+      {% if user.is_authenticated and user.is_active %}
+        <div id="user-tools">
+          {% trans 'Welcome,' %}
+          <strong>{% firstof user.first_name user.username %}</strong>.
+          {% block userlinks %}
+            <a tabindex="{% inc %}" href="/accounts/logout/">
+            {% trans 'Log out' %}</a>
+          {% endblock %}
+        </div>
+      {% endif %}
+    </div>
+    <!-- END Header -->
+    {% block breadcrumbs %}
+      <div class="breadcrumbs">
+        <a tabindex="{% inc %}" href="/">{% trans 'Home' %}</a>
+      </div>
+    {% endblock %}
+    {% if messages %}
+      <ul class="messagelist">
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    <!-- Content -->
+    <div id="content">
+        {% block pretitle %}{% endblock %}
+        {% block content_title %}
+            {% if title %}<h1>{{ title }}</h1>{% endif %}
+        {% endblock %}
+        {% block content %}
+            {% block object-tools %}{% endblock %}
+            {{ content }}
+        {% endblock %}
+        <br class="clear" />
+    </div>
+    <!-- END Content -->
+  </div>
+  <!-- END Container -->
+</body>
+</html>

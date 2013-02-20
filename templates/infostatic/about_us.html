@@ -1,0 +1,31 @@
+{% extends "infostatic/base_site.html" %}
+{% load i18n %}
+
+{% block extrastyle %}
+  <link rel="stylesheet" type="text/css" href="/staticfiles/css/partners.css" />
+  <link rel="stylesheet" type="text/css" href="/staticfiles/css/right_img.css" />
+{% endblock %}
+{% block right_sidebar %}
+  <div id="right_img_bar">
+    <img src="/staticfiles/img/DeKaSa/facilities.JPG" height="230" width="307"
+      alt="{% trans 'Facilities' %}" title="{% trans 'Facilities' %}" />
+  </div>
+{% endblock %}
+{% block content %}
+    <div id="content-main">
+        <h2>{% trans 'Brief history of DeKaSa-Service OY' %}</h2>
+        <p>{% trans 'DeKaSa-Service OY has started operating in year 2009. Business Identity Code is: 2239960-6.' %}</p>
+        <p>{% trans 'In December 2010, the company moved to a new location in Tattarisuo.' %}</p>
+        <h2>{% trans 'Our experts' %}</h2>
+        <p>{% trans 'Our experts have all the knowledge and facilities needed for service or repairs of your car.' %}
+        </p>
+        <p>{% trans 'Our partners logos are presented in the bottom of this page.' %}
+        </p>
+    </div>
+{% endblock %}
+{% block partners-logo %}
+    <img src="/staticfiles/img/partners/HydroMarket.gif" alt="HydroMarket logo" height="50" width="162" />
+    <img src="/staticfiles/img/partners/hessu-adlogo2-350.gif" alt="HessumobiiliOY logo" height="37" width="259" />
+    <img src="/staticfiles/img/partners/interHinaus.jpg" alt="Inter-HinausOy logo" height="37" width="367" />
+    <img src="/staticfiles/img/partners/KoivunenOY.gif" alt="KoivunenOY logo" height="50" width="149" />
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "infostatic/base_site.html" %}
+{% load i18n %}
+
+{% block extrastyle %}
+  <link rel="stylesheet" type="text/css" href="/staticfiles/css/module.css" />
+  <link rel="stylesheet" type="text/css" href="/staticfiles/css/right_img.css" />
+{% endblock %}
+{% block right_sidebar %}
+  <div id="right_img_bar">
+    <img width="207" height="230" src="/staticfiles/img/DeKaSa/building.JPG"
+      alt="{% trans 'DeKaSa building' %}"
+      title="{% trans 'DeKaSa building' %}" />
+  </div>
+{% endblock %}
+{% block content %}
+  <div id="content-main">
+    <h2>{{ title }}</h2>
+      {% if extext %}<p>{{extext}}</p>{% endif %}
+      {% if prcln %}
+        <div class="module">
+          <table summary="Price List for car cleaning">
+            <caption>{% trans 'Professional car cleaning' %}</caption>
+            <thead>
+              <tr>
+                <th>{% trans 'Kind of work' %}</th>
+                <th>{% trans 'Car' %}</th>
+                <th>{% trans 'Van' %}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for jj in prcln %}
+                <tr>
+                  <td>{{jj.0}}</td>
+                  <td class="prices">{{jj.1}}</td>
+                  <td class="prices">{{jj.2}}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      {% endif %}
+      {% if prspcl %}
+      <ul>
+        {% for jj in prspcl %}
+          <li>{{jj.0}} {{jj.1}} {{jj.2}}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+{% endblock %}

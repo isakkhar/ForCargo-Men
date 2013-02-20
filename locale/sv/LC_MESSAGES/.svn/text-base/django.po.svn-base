@@ -1,0 +1,843 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-07 23:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: orders/models.py:14 testdrive/models.py:22
+msgid "orders"
+msgstr ""
+
+#: orders/models.py:15
+msgid "Order date"
+msgstr ""
+
+#: orders/views.py:34
+msgid "Reserved"
+msgstr ""
+
+#: orders/views.py:37
+msgid "Occupied"
+msgstr ""
+
+#: orders/views.py:41 orders/views.py:44
+msgid "Available"
+msgstr ""
+
+#: orders/views.py:60
+msgid "ERROR: reserve function, saving order in DB"
+msgstr ""
+
+#: orders/views.py:62 orders/views.py:78 orders/views.py:125
+msgid "You can not change the past"
+msgstr ""
+
+#: orders/views.py:76
+msgid "ERROR: release function, deleting order from DB"
+msgstr ""
+
+#: orders/views.py:103
+msgid "A week reservation table."
+msgstr ""
+
+#: registration/forms.py:42
+msgid "username"
+msgstr ""
+
+#: registration/forms.py:45
+msgid "email address"
+msgstr ""
+
+#: registration/forms.py:47 startpage/models.py:44 testdrive/models.py:13
+msgid "phone number"
+msgstr ""
+
+#: registration/forms.py:50
+msgid "password"
+msgstr ""
+
+#: registration/forms.py:53
+msgid "password (again)"
+msgstr ""
+
+#: registration/forms.py:67
+msgid "This username is already taken. Please choose another."
+msgstr ""
+
+#: registration/forms.py:81
+msgid "You must type the same password each time"
+msgstr ""
+
+#: registration/forms.py:90
+msgid "Phone number can only contain digits, spaces or symbols \"-, +, .,\""
+msgstr ""
+
+#: registration/forms.py:127
+msgid "I have read and agree to the Terms of Service"
+msgstr ""
+
+#: registration/forms.py:145
+msgid ""
+"This email address is already in use. Please supply a different email "
+"address."
+msgstr ""
+
+#: registration/forms.py:172
+msgid ""
+"Registration using free email addresses is prohibited. Please supply a "
+"different email address."
+msgstr ""
+
+#: registration/models.py:227
+msgid "user"
+msgstr ""
+
+#: registration/models.py:228
+msgid "activation key"
+msgstr ""
+
+#: registration/models.py:234
+msgid "registration profile"
+msgstr ""
+
+#: registration/models.py:235
+msgid "registration profiles"
+msgstr ""
+
+#: startpage/models.py:42
+msgid "user info"
+msgstr ""
+
+#: startpage/models.py:43 testdrive/models.py:10
+msgid "address"
+msgstr ""
+
+#: startpage/models.py:46 testdrive/models.py:28
+msgid "comments"
+msgstr ""
+
+#: startpage/views.py:25 templates/infostatic/base.html:77
+#: templates/registration/header.html:40
+msgid "Home"
+msgstr ""
+
+#: startpage/views.py:26
+msgid "Number of hits: "
+msgstr ""
+
+#: startpage/views.py:27
+msgid "Number of ip-addresses: "
+msgstr ""
+
+#: startpage/views.py:28
+msgid "Visitor number: "
+msgstr ""
+
+#: startpage/views.py:61 templates/infostatic/base.html:57
+msgid "Why login is required?"
+msgstr ""
+
+#: startpage/views.py:75
+msgid "All about DeKaSa-Service OY company"
+msgstr ""
+
+#: startpage/views.py:90
+msgid "List of services available at DeKaSa-Service OY"
+msgstr ""
+
+#: startpage/views.py:91 startpage/views.py:137
+msgid "Scheduled maintenance"
+msgstr ""
+
+#: startpage/views.py:91
+msgid "Oil change"
+msgstr ""
+
+#: startpage/views.py:91
+msgid "Rustproof"
+msgstr ""
+
+#: startpage/views.py:92
+msgid "Sharing belt change"
+msgstr ""
+
+#: startpage/views.py:92
+msgid "Wheels change"
+msgstr ""
+
+#: startpage/views.py:93
+msgid "Tires balancing"
+msgstr ""
+
+#: startpage/views.py:93
+msgid "Tire storage"
+msgstr ""
+
+#: startpage/views.py:94
+msgid "Inspection services"
+msgstr ""
+
+#: startpage/views.py:94
+msgid "Other installation/repairs"
+msgstr ""
+
+#: startpage/views.py:96
+msgid "Fetching you car and returning it back"
+msgstr ""
+
+#: startpage/views.py:97
+msgid "Cleaning service"
+msgstr ""
+
+#: startpage/views.py:97
+msgid "Fixing electrical problems"
+msgstr ""
+
+#: startpage/views.py:98
+msgid "Hydraulic hose repair"
+msgstr ""
+
+#: startpage/views.py:98
+msgid "Welding works"
+msgstr ""
+
+#: startpage/views.py:99
+msgid "Brake repairs"
+msgstr ""
+
+#: startpage/views.py:99
+msgid "Coupling change"
+msgstr ""
+
+#: startpage/views.py:113
+msgid "Price List"
+msgstr ""
+
+#: startpage/views.py:114
+msgid "Cleaning services"
+msgstr ""
+
+#: startpage/views.py:115
+msgid "Special offer"
+msgstr ""
+
+#: startpage/views.py:116
+msgid ""
+"Price of hour work is 50€ for cars and 60€ + VAT for others. Subsections "
+"present some other prices."
+msgstr ""
+
+#: startpage/views.py:122
+msgid "Washing by hand "
+msgstr ""
+
+#: startpage/views.py:123
+msgid "Waxing"
+msgstr ""
+
+#: startpage/views.py:124
+msgid "Polishing"
+msgstr ""
+
+#: startpage/views.py:125
+msgid "Hard waxing"
+msgstr ""
+
+#: startpage/views.py:126
+msgid "Engine cleaning"
+msgstr ""
+
+#: startpage/views.py:127
+msgid "Vacuum cleaning"
+msgstr ""
+
+#: startpage/views.py:128
+msgid "Inner cleaning"
+msgstr ""
+
+#: startpage/views.py:129
+msgid "Couch washing"
+msgstr ""
+
+#: startpage/views.py:130
+msgid "Complete inner cleaning"
+msgstr ""
+
+#: startpage/views.py:131
+msgid "Leather cleaning"
+msgstr ""
+
+#: startpage/views.py:132
+msgid "Complete cleaning"
+msgstr ""
+
+#: startpage/views.py:133
+msgid "Label removing"
+msgstr ""
+
+#: startpage/views.py:133
+msgid "call"
+msgstr ""
+
+#: startpage/views.py:137 startpage/views.py:138
+msgid "from"
+msgstr ""
+
+#: startpage/views.py:138
+msgid "Winter maintenance"
+msgstr ""
+
+#: startpage/views.py:162
+msgid "Contact information"
+msgstr ""
+
+#: startpage/views.py:174
+msgid "Site map"
+msgstr ""
+
+#: templates/404.html:4 templates/404.html.py:7
+msgid "Page not found"
+msgstr ""
+
+#: templates/404.html:8
+msgid "We're sorry, but the requested page could not be found."
+msgstr ""
+
+#: templates/500.html:4
+msgid "Server error (500)"
+msgstr ""
+
+#: templates/500.html:7
+msgid "Server Error <em>(500)</em>"
+msgstr ""
+
+#: templates/500.html:8
+msgid ""
+"There's been an error. It's been reported to the site administrators via e-"
+"mail and should be fixed shortly. Thanks for your patience."
+msgstr ""
+
+#: templates/clients/index.html:15
+msgid "Client are not available"
+msgstr ""
+
+#: templates/clients/index.html:17
+msgid "Add client"
+msgstr ""
+
+#: templates/infostatic/about_us.html:11
+msgid "Facilities"
+msgstr ""
+
+#: templates/infostatic/about_us.html:16
+msgid "Brief history of DeKaSa-Service OY"
+msgstr ""
+
+#: templates/infostatic/about_us.html:17
+msgid ""
+"DeKaSa-Service OY has started operating in year 2009. Business Identity Code "
+"is: 2239960-6."
+msgstr ""
+
+#: templates/infostatic/about_us.html:18
+msgid "In December 2010, the company moved to a new location in Tattarisuo."
+msgstr ""
+
+#: templates/infostatic/about_us.html:19
+msgid "Our experts"
+msgstr ""
+
+#: templates/infostatic/about_us.html:20
+msgid ""
+"Our experts have all the knowledge and facilities needed for service or "
+"repairs of your car."
+msgstr ""
+
+#: templates/infostatic/about_us.html:22
+msgid "Our partners logos are presented in the bottom of this page."
+msgstr ""
+
+#: templates/infostatic/base.html:43 templates/registration/header.html:28
+msgid "Welcome,"
+msgstr ""
+
+#: templates/infostatic/base.html:47
+#: templates/registration/password_change_done.html:6
+msgid "Change password"
+msgstr ""
+
+#: templates/infostatic/base.html:49
+msgid "Reset password"
+msgstr ""
+
+#: templates/infostatic/base.html:51 templates/registration/header.html:32
+#: templates/registration/password_change_done.html:7
+msgid "Log out"
+msgstr ""
+
+#: templates/infostatic/base.html:54
+msgid "Login"
+msgstr ""
+
+#: templates/infostatic/base.html:79
+msgid "Site Map"
+msgstr ""
+
+#: templates/infostatic/base.html:96 templates/infostatic/index.html:35
+msgid "Registration"
+msgstr ""
+
+#: templates/infostatic/base.html:99 templates/infostatic/index.html:29
+msgid "About us"
+msgstr ""
+
+#: templates/infostatic/base.html:100 templates/infostatic/index.html:21
+msgid "Services"
+msgstr ""
+
+#: templates/infostatic/base.html:101
+msgid "Orders (test version)"
+msgstr ""
+
+#: templates/infostatic/base.html:103 templates/infostatic/base.html.py:115
+msgid "Prices"
+msgstr ""
+
+#: templates/infostatic/base.html:118 templates/infostatic/index.html:26
+msgid "Contacts"
+msgstr ""
+
+#: templates/infostatic/base.html:123
+msgid "DeKaSa Administration"
+msgstr ""
+
+#: templates/infostatic/base.html:128
+msgid "Documentation"
+msgstr ""
+
+#: templates/infostatic/base.html:132
+msgid "Statistics"
+msgstr ""
+
+#: templates/infostatic/base.html:162
+msgid "Powered by "
+msgstr ""
+
+#: templates/infostatic/base_site.html:10
+#: templates/infostatic/base_site.html:13 templates/infostatic/index.html:17
+#: templates/registration/breand.html:5
+msgid "DeKaSa-Service OY"
+msgstr ""
+
+#: templates/infostatic/contacts.html:14 templates/infostatic/contacts.html:15
+msgid "DeKaSa-Service OY in GoogleMap"
+msgstr ""
+
+#: templates/infostatic/contacts.html:17
+msgid "View"
+msgstr ""
+
+#: templates/infostatic/contacts.html:19
+msgid "DeKaSa-Service OY in a larger map"
+msgstr ""
+
+#: templates/infostatic/contacts.html:26
+msgid "Our address is Kytkintie 5, Helsinki 00770."
+msgstr ""
+
+#: templates/infostatic/contacts.html:27
+msgid ""
+"You may contact us at the phone numbers: +358-45-2377979, +358-46-8104153. "
+msgstr ""
+
+#: templates/infostatic/contacts.html:29
+msgid "Our partner"
+msgstr ""
+
+#: templates/infostatic/contacts.html:32
+msgid ""
+"provides towing service 24 hours a day, their phone number is "
+"+358-80-0122333 (Helsinki), or +358-40-0780007 (other Finland)."
+msgstr ""
+
+#: templates/infostatic/index.html:11 templates/infostatic/index.html.py:12
+msgid "Truck in DeKaSa"
+msgstr ""
+
+#: templates/infostatic/index.html:18
+msgid ""
+"DeKaSa-Service OY car and truck repairing company is located in Helsinki "
+"near Ring III road (Kehä III, road E18, or road 50). "
+msgstr ""
+
+#: templates/infostatic/index.html:19
+msgid ""
+"DeKaSa-Service OY provides all kinds of car and truck services, works, "
+"repairs, and cleaning. "
+msgstr ""
+
+#: templates/infostatic/index.html:20
+msgid "These services are described in section "
+msgstr ""
+
+#: templates/infostatic/index.html:22
+msgid " more detailed. "
+msgstr ""
+
+#: templates/infostatic/index.html:23
+msgid "We will understand you an English, Russian or Finnish."
+msgstr ""
+
+#: templates/infostatic/index.html:25
+msgid "Our address, map and our contact information you can find on the page "
+msgstr ""
+
+#: templates/infostatic/index.html:26 templates/infostatic/index.html.py:29
+#: templates/infostatic/index.html:39
+msgid "."
+msgstr ""
+
+#: templates/infostatic/index.html:28
+msgid ""
+"The brief history of DeKaSa-Service OY company and information about our "
+"partners is presented in section "
+msgstr ""
+
+#: templates/infostatic/index.html:31 templates/orders/daytable.html:34
+msgid "Orders"
+msgstr ""
+
+#: templates/infostatic/index.html:32
+msgid " functions require authentication. "
+msgstr ""
+
+#: templates/infostatic/index.html:33
+msgid "If you are a new user you can register via e-mail by link "
+msgstr ""
+
+#: templates/infostatic/index.html:35
+msgid ". "
+msgstr ""
+
+#: templates/infostatic/index.html:36
+msgid "Registration via SMS will be possible later, in the next version."
+msgstr ""
+
+#: templates/infostatic/index.html:38
+msgid "You can also read "
+msgstr ""
+
+#: templates/infostatic/index.html:39
+msgid "why login is required"
+msgstr ""
+
+#: templates/infostatic/logneed.html:8
+msgid ""
+"Some functions require authentication. Without authentication somebody might "
+"change or delete your reservation, or reserve all time so that you can not "
+"find free time."
+msgstr ""
+
+#: templates/infostatic/logneed.html:10
+msgid "If you do not have an account, please follow the "
+msgstr ""
+
+#: templates/infostatic/logneed.html:12
+msgid "registration "
+msgstr ""
+
+#: templates/infostatic/logneed.html:12
+msgid "link."
+msgstr ""
+
+#: templates/infostatic/prices.html:11 templates/infostatic/prices.html:12
+msgid "DeKaSa building"
+msgstr ""
+
+#: templates/infostatic/prices.html:22
+msgid "Professional car cleaning"
+msgstr ""
+
+#: templates/infostatic/prices.html:25
+msgid "Kind of work"
+msgstr ""
+
+#: templates/infostatic/prices.html:26
+msgid "Car"
+msgstr ""
+
+#: templates/infostatic/prices.html:27
+msgid "Van"
+msgstr ""
+
+#: templates/infostatic/service.html:10 templates/infostatic/service.html:11
+msgid "Work place of DeKaSa-Service"
+msgstr ""
+
+#: templates/infostatic/service.html:18
+msgid " All the works and services in one place:"
+msgstr ""
+
+#: templates/infostatic/service.html:26
+msgid " More services:"
+msgstr ""
+
+#: templates/orders/daytable.html:21
+msgid ""
+"Ordering is not in use. It's showing only for testing. The time reservation "
+"is not yet guaranteed!"
+msgstr ""
+
+#: templates/orders/daytable.html:37
+msgid "Date Time"
+msgstr ""
+
+#: templates/registration/activate.html:7
+msgid "Account successfully activated"
+msgstr ""
+
+#: templates/registration/activate.html:9 templates/registration/login.html:30
+msgid "Log in"
+msgstr ""
+
+#: templates/registration/activate.html:12
+msgid "Account activation failed"
+msgstr ""
+
+#: templates/registration/logged_out.html:5
+#: templates/registration/logout.html:5
+msgid "Thanks for spending some quality time with the Web site today."
+msgstr ""
+
+#: templates/registration/login.html:20
+msgid "Username:"
+msgstr ""
+
+#: templates/registration/login.html:24
+msgid "Password:"
+msgstr ""
+
+#: templates/registration/login.html:37
+msgid "Forgot password"
+msgstr ""
+
+#: templates/registration/login.html:38
+msgid "Reset it"
+msgstr ""
+
+#: templates/registration/login.html:40
+msgid "Not member"
+msgstr ""
+
+#: templates/registration/login.html:41
+msgid "Register"
+msgstr ""
+
+#: templates/registration/password_change_done.html:10
+#: templates/registration/password_change_done.html:13
+msgid "Password change successful"
+msgstr ""
+
+#: templates/registration/password_change_done.html:14
+msgid "Your password was changed."
+msgstr ""
+
+#: templates/registration/password_change_form.html:4
+#: templates/registration/password_change_form.html:7
+msgid "Password change"
+msgstr ""
+
+#: templates/registration/password_change_form.html:8
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+
+#: templates/registration/password_change_form.html:13
+msgid "Old password:"
+msgstr ""
+
+#: templates/registration/password_change_form.html:18
+#: templates/registration/password_reset_confirm.html:14
+msgid "New password:"
+msgstr ""
+
+#: templates/registration/password_change_form.html:23
+#: templates/registration/password_reset_confirm.html:19
+msgid "Confirm password:"
+msgstr ""
+
+#: templates/registration/password_change_form.html:26
+#: templates/registration/password_reset_confirm.html:22
+msgid "Change my password"
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:4
+#: templates/registration/password_reset_form.html:4
+#: templates/registration/password_reset_form.html:7
+msgid "Password reset"
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:8
+msgid "Enter new password"
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:9
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:26
+msgid "Password reset unsuccessful"
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:27
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a new password reset."
+msgstr ""
+
+#: templates/registration/password_reset_done.html:4
+#: templates/registration/password_reset_done.html:7
+msgid "Password reset successful"
+msgstr ""
+
+#: templates/registration/password_reset_done.html:8
+msgid ""
+"We've e-mailed you instructions for setting your password to the e-mail "
+"address you submitted. You should be receiving it shortly."
+msgstr ""
+
+#: templates/registration/password_reset_email.html:3
+msgid "You're receiving this e-mail because you requested a password reset"
+msgstr ""
+
+#: templates/registration/password_reset_email.html:4
+#, python-format
+msgid "for your user account at %(site_name)s"
+msgstr ""
+
+#: templates/registration/password_reset_email.html:6
+msgid "Please go to the following page and choose a new password:"
+msgstr ""
+
+#: templates/registration/password_reset_email.html:10
+msgid "Your username, in case you've forgotten:"
+msgstr ""
+
+#: templates/registration/password_reset_email.html:11
+msgid "Thanks for using our site!"
+msgstr ""
+
+#: templates/registration/password_reset_email.html:12
+#, python-format
+msgid "The %(site_name)s team"
+msgstr ""
+
+#: templates/registration/password_reset_form.html:8
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll e-mail "
+"instructions for setting a new one."
+msgstr ""
+
+#: templates/registration/password_reset_form.html:12
+msgid "E-mail address:"
+msgstr ""
+
+#: templates/registration/password_reset_form.html:14
+msgid "Reset my password"
+msgstr ""
+
+#: templates/registration/registration_complete.html:5
+msgid "You are now registered. Activation email sent."
+msgstr ""
+
+#: templates/registration/registration_form.html:8
+msgid "Submit"
+msgstr ""
+
+#: templates/registration/registration_form.html:15
+msgid ""
+"We recommend to use your car registration number as the username. Your "
+"information (e-mail and password) will not be transferred to any third "
+"party. The username can be given to another user, after half a year without "
+"use. This way a new owner of the car can use it if you sold your car."
+msgstr ""
+
+#: testdrive/models.py:9
+msgid "client name"
+msgstr ""
+
+#: testdrive/models.py:11
+msgid "contact person"
+msgstr ""
+
+#: testdrive/models.py:12
+msgid "e-mail address"
+msgstr ""
+
+#: testdrive/models.py:23
+msgid "order number"
+msgstr ""
+
+#: testdrive/models.py:24
+msgid "address from"
+msgstr ""
+
+#: testdrive/models.py:25
+msgid "address to"
+msgstr ""
+
+#: testdrive/models.py:26
+msgid "Day of transport."
+msgstr ""
+
+#: testdrive/models.py:27
+msgid "weight"
+msgstr ""
+
+#: testdrive/views.py:51
+msgid "List of the clients"
+msgstr ""
+
+#: testdrive/views.py:77
+msgid "New order is saved"
+msgstr ""
+
+#: testdrive/views.py:78
+msgid "Client "
+msgstr ""
+
+#: testdrive/views.py:78
+msgid " can add new order."
+msgstr ""
+
+#: testdrive/views.py:108
+msgid "Add a new client"
+msgstr ""
+
+#: testdrive/views.py:110
+msgid "New client is saved"
+msgstr ""
+
+#: viewtools/views.py:26
+#, python-format
+msgid "No translation for language %s."
+msgstr ""
+
+#: viewtools/views.py:40
+msgid "Sorry, this page is not ready yet."
+msgstr ""

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/586/trunk/registration
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/542/trunk/registration/urls.py
+END
+forms.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/586/trunk/registration/forms.py
+END
+admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/543/trunk/registration/admin.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/543/trunk/registration/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/244/trunk/registration/__init__.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/543/trunk/registration/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/541/trunk/registration/models.py
+END

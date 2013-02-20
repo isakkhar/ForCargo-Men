@@ -1,0 +1,60 @@
+{% extends "infostatic/base_site.html" %}
+{% load i18n %}
+{% load tabind %}
+
+{% block extrastyle %}
+  <link rel="stylesheet" type="text/css" href="/staticfiles/css/module.css" />
+{% endblock %}
+
+{% block setlang %}
+    {% for lang in LANGUAGES %}
+        <a tabindex="{% inc %}" class="lng"
+            href="/tools/i18n/setlang/{{ lang.0 }}/?next=/orders/">
+            <img src="/staticfiles/img/flags/{{ lang.0 }}.gif" 
+            alt="{{ lang.1 }} flag" height="15" width="20" />{{ lang.1 }}
+        </a>
+    {% endfor %}
+{% endblock %}
+
+{% block content %}
+  <div id="content-main">
+    <p class="precaution">{% blocktrans %}Ordering is not in use. It's showing only for testing. The time reservation is not yet guaranteed!{% endblocktrans %}
+    </p>
+    <h2>{{ title }}</h2>
+    <div class="module">
+      <p>
+        <a tabindex="{% inc %}" href="{{path_prev_week}}"> &lt;&lt; </a>
+        <a tabindex="{% inc %}" href="{{path_prev_day}}"> &lt; </a>
+        <span class="right">
+          <a tabindex="{% inc %}" href="{{path_next_day}}"> &gt; </a>
+          <a tabindex="{% inc %}" href="{{path_next_week}}"> &gt;&gt; </a>
+        </span>
+      </p>
+      <table summary="Orders List">
+        <caption>{% trans 'Orders' %}</caption>
+        <thead>
+          <tr>
+            <th>{% trans 'Date Time' %}</th>
+            {% for jj in days_render %}
+              <th>{{jj}}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+        {% for elm in chs_render %}
+          <tr>
+            <td>{{elm.0}}</td>
+            {% for ii in elm.1 %}
+              {% if ii.1 %}
+                <td><a tabindex="{% inc %}" class="{{ii.3}}" href="{{ii.1}}">{{ii.2}}</a></td>
+              {% else %}
+                <td><span class="{{ii.3}}">{{ii.2}}</span></td>
+              {% endif %}
+            {% endfor %}
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+{% endblock %}

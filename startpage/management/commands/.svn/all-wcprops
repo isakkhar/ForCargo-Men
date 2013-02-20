@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/576/trunk/startpage/management/commands
+END
+test_validation.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/576/trunk/startpage/management/commands/test_validation.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/576/trunk/startpage/management/commands/__init__.py
+END

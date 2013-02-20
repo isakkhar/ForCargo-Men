@@ -1,0 +1,35 @@
+{% extends "infostatic/base_site.html" %}
+{% load i18n %}
+{% load tabind %}
+
+{% block extrastyle %}
+    <link rel="stylesheet" type="text/css"
+      href="/staticfiles/css/right_img.css" />
+{% endblock %}
+
+{% block right_sidebar %}
+  <div id="right_img_bar">
+    <a tabindex="{% inc %}" href="{{lnk1}}">
+      <img src="/staticfiles/img/Kytkintie.png" width="429" height="352"
+        alt="{%trans 'DeKaSa-Service OY in GoogleMap' %}"
+        title="{%trans 'DeKaSa-Service OY in GoogleMap' %}"
+        /></a>
+    <p>{% trans 'View' %}
+      <a tabindex="{% inc %}" href="{{lnk1}}"
+      style="color:#0000FF;text-align:left">{% trans 'DeKaSa-Service OY in a larger map' %}</a>
+    </p>
+  </div>
+{% endblock %}
+{% block content %}
+  <div id="content-main">
+    <h2>{{ title }}</h2>
+    <p>{%trans 'Our address is Kytkintie 5, Helsinki 00770.'%}</p>
+    <p>{%trans 'You may contact us at the phone numbers: +358-45-2377979, +358-46-8104153. ' %}
+    </p>
+    <p>{%trans 'Our partner' %}
+      <a tabindex="{% inc %}"
+        href="http://personal.inet.fi/yritys/inter-hinaus/">Inter-Hinaus Oy</a>
+      {%trans 'provides towing service 24 hours a day, their phone number is +358-80-0122333 (Helsinki), or +358-40-0780007 (other Finland).' %}
+    </p>
+  </div>
+{% endblock %}

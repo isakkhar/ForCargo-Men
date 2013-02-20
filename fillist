@@ -1,0 +1,116 @@
+# INSTALL.txt
+__init__.py
+# apache/django.wsgi
+# deployment/apache2/httpd.conf
+# deployment/apache2/sites-available/svetaDjango
+# dirlist
+# fillist
+# fillist.new
+# install.sh
+locale/fi/LC_MESSAGES/django.po
+locale/fi/LC_MESSAGES/djangojs.po
+locale/ru/LC_MESSAGES/django.po
+locale/ru/LC_MESSAGES/djangojs.po
+locale/sv/LC_MESSAGES/django.po
+locale/sv/LC_MESSAGES/djangojs.po
+# manage.py
+middleware/__init__.py
+middleware/multiling.py
+orders/__init__.py
+orders/models.py
+orders/urls.py
+orders/views.py
+registration/__init__.py
+registration/admin.py
+registration/forms.py
+registration/models.py
+registration/tests.py
+registration/urls.py
+registration/views.py
+# settings.py
+# settings.py.in
+startpage/__init__.py
+startpage/models.py
+startpage/tests.py
+startpage/urls.py
+startpage/views.py
+startpage/templatetags/__init__.py
+startpage/templatetags/tabind.py
+staticfiles/css/base.css
+staticfiles/css/forms.css
+staticfiles/css/ie.css
+staticfiles/css/login.css
+staticfiles/css/module.css
+staticfiles/css/partners.css
+staticfiles/css/right_img.css
+staticfiles/css/rtl.css
+staticfiles/css/widgets.css
+staticfiles/img/DeKaSa/building.JPG
+staticfiles/img/DeKaSa/facilities.JPG
+staticfiles/img/DeKaSa/inside.JPG
+staticfiles/img/DeKaSa/truck.JPG
+staticfiles/img/admin/default-bg.gif
+staticfiles/img/admin/icon_alert.gif
+staticfiles/img/admin/icon_calendar.gif
+staticfiles/img/admin/icon_clock.gif
+staticfiles/img/admin/icon_error.gif
+staticfiles/img/admin/icon_success.gif
+staticfiles/img/admin/nav-bg-reverse.gif
+staticfiles/img/admin/nav-bg.gif
+staticfiles/img/flags/en.gif
+staticfiles/img/flags/fi.gif
+staticfiles/img/flags/ru.gif
+staticfiles/img/flags/sv.gif
+staticfiles/img/Lyhtkuja.png
+staticfiles/img/favicon.ico
+staticfiles/img/logogo.jpg
+staticfiles/img/partners/HydroMarket.gif
+staticfiles/img/partners/KoivunenOY.gif
+staticfiles/img/partners/hessu-adlogo2-350.gif
+staticfiles/img/partners/interHinaus.jpg
+staticfiles/js/admin/DateTimeShortcuts.js
+staticfiles/js/calendar.js
+staticfiles/js/core.js
+templates/404.html
+templates/500.html
+templates/clients/addclient.html
+templates/clients/addorder.html
+templates/clients/detail.html
+templates/clients/index.html
+templates/clients/savemsg.html
+templates/infostatic/about_us.html
+templates/infostatic/base.html
+templates/infostatic/base_site.html
+templates/infostatic/contacts.html
+templates/infostatic/index.html
+templates/infostatic/logneed.html
+templates/infostatic/prices.html
+templates/infostatic/service.html
+templates/infostatic/sitemap.html
+templates/orders/daytable.html
+templates/registration/activate.html
+templates/registration/activation_email.txt
+templates/registration/activation_email_subject.txt
+templates/registration/breand.html
+templates/registration/header.html
+templates/registration/logged_out.html
+templates/registration/login.html
+templates/registration/logout.html
+templates/registration/password_change_done.html
+templates/registration/password_change_form.html
+templates/registration/password_reset_complete.html
+templates/registration/password_reset_confirm.html
+templates/registration/password_reset_done.html
+templates/registration/password_reset_email.html
+templates/registration/password_reset_form.html
+templates/registration/registration_complete.html
+templates/registration/registration_form.html
+# testdrive/__init__.py
+# testdrive/admin.py
+# testdrive/models.py
+# testdrive/urls.py
+# testdrive/views.py
+viewtools/__init__.py
+viewtools/urls.py
+viewtools/views.py
+urls.py

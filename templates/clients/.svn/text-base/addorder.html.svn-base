@@ -1,0 +1,19 @@
+{% extends "infostatic/base_site.html" %}
+{% load i18n%}
+
+{% block extrastyle %}
+    <link rel="stylesheet" type="text/css" href="/staticfiles/css/forms.css" />
+    <script type="text/javascript" src="{% url django.views.i18n.javascript_catalog %}"></script>
+    <script type="text/javascript" src="/staticfiles/js/core.js"></script>
+    <script type="text/javascript" src="/staticfiles/js/calendar.js"></script>
+    <script type="text/javascript" src="/staticfiles/js/admin/DateTimeShortcuts.js"></script>
+{% endblock %}
+
+{% block content %}
+    <div id="content-main">
+        <form action="{{act}}" method="post">
+            {{ form.as_p }}
+            <p><input type="submit" value="Submit" /></p>
+        </form>
+    </div>
+{% endblock %}

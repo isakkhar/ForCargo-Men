@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/590/trunk/startpage
+END
+testvalidation.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/590/trunk/startpage/testvalidation.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/587/trunk/startpage/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/23/trunk/startpage/__init__.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/577/trunk/startpage/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/581/trunk/startpage/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/465/trunk/startpage/urls.py
+END

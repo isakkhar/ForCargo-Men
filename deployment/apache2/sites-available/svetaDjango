@@ -1,0 +1,31 @@
+##How to use Django with Apache and mod_wsgi
+
+<VirtualHost *:80>
+
+    ServerName 10.10.1.4
+#    ServerAlias example.com
+    ServerAdmin webmaster
+
+    DocumentRoot /home/django/django_logistics
+
+#    Alias /robots.txt /usr/local/www/documents/robots.txt
+#    Alias /favicon.ico /usr/local/www/documents/favicon.ico
+
+    Alias /staticfiles/ /home/django/django_logistics/staticfiles/
+
+# admin media static files are available on server
+    Alias //media/ usr/lib/pymodules/python2.6/django/contrib/admin/
+
+    <Directory /home/django/django_logistics>
+      Order allow,deny
+      Allow from all
+    </Directory>
+
+    WSGIScriptAlias / /home/django/django_logistics/apache/django.wsgi
+
+    <Directory /home/django/django_logistics/apache>
+      Order allow,deny
+      Allow from all
+    </Directory>
+
+</VirtualHost>

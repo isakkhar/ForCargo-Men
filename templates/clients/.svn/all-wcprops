@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/172/trunk/templates/clients
+END
+detail.html
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/172/trunk/templates/clients/detail.html
+END
+addorder.html
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/74/trunk/templates/clients/addorder.html
+END
+savemsg.html
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/98/trunk/templates/clients/savemsg.html
+END
+addclient.html
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/172/trunk/templates/clients/addclient.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/172/trunk/templates/clients/index.html
+END

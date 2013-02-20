@@ -1,0 +1,19 @@
+{% extends "infostatic/base_site.html" %}
+{% load i18n %}
+
+{% block content %}    <div id="content-main">
+        {% if clnts_list %}
+            <ul>
+            {% for client in clnts_list %}
+                <li>
+                <a class="addord" href="{{client.id}}"><strong>{{ client.client_name }}</strong></a>
+                </li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>{% trans 'Client are not available' %}.</p>
+        {% endif %}
+        <p><a href="/clients/addclient/" class="addlink">{% trans 'Add client' %}</a></p>
+    </div>
+
+{% endblock %}

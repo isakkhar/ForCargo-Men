@@ -1,0 +1,16 @@
+{% extends "infostatic/base.html" %}
+{% load i18n %}
+
+{% block extrastyle %}
+<link rel="icon" href="/staticfiles/img/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/staticfiles/img/favicon.ico"
+  type="image/x-icon" />
+{% endblock %}
+
+{% block title %}{{ title }} | {% trans 'DeKaSa-Service OY' %}{% endblock %}
+
+{% block branding %}
+<h1>{%trans 'DeKaSa-Service OY' %}</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

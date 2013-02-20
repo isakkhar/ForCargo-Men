@@ -1,0 +1,17 @@
+{% extends "registration/breand.html" %}
+{% load i18n %}
+
+{% block content %}
+  <form method="post" action=".">
+    {{ form.as_p }}
+    <p>
+      <input type="submit" value="{% trans 'Submit' %}" />
+    </p>
+  </form>
+  <script type="text/javascript">
+    document.getElementById("id_username").focus()
+  </script>
+  <p class="description">
+    {% trans 'We recommend to use your car registration number as the username. Your information (e-mail and password) will not be transferred to any third party. The username can be given to another user, after half a year without use. This way a new owner of the car can use it if you sold your car.' %}
+    </p>
+{% endblock %}

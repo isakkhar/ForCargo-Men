@@ -1,0 +1,49 @@
+Installing django-logistics.
+
+0. Install django, django-registration, apache2, mod_wsgi, subversion (svn), 
+ gettext, Python docutils.
+1. Check out a working copy from svn:
+  ....
+2. Rename the working directory:
+ mv django-logistics django_logistics
+3. Install postgresql:
+ sudo nice portupgrade -m '-DNOCLEANDEPENDS ' --batch -kpw -N databases/postgresql84-server
+3. Install py-psycopg2:
+ sudo nice portupgrade -m '-DNOCLEANDEPENDS ' --batch -kpw -N databases/py-psycopg2
+4. Enable postgresql (as root, else edit the file):
+ echo postgresql_enable="YES" >> /etc/rc.conf
+5. Initialize the postgresql cluster:
+ sudo /usr/local/etc/rc.d/postgresql initdb
+6. Start postgresql server:
+ sudo /usr/local/etc/rc.d/postgresql start
+7. Create a database named fishtrip:
+ sudo -u pgsql createdb fishtrip
+ (sudo -u postgres createdb fishtrip)
+8. Create the role sveta with superuser ability:
+ sudo -u pgsql createuser -s sveta
+9. Adjust PROJECT_ROOT in settings.py.
+10. Run install.sh:
+ ./install.sh
+11. Create the tables:
+ python manage.py syncdb
+Agree to make a django superuser, give an e-mail.
+12. echo "UPDATE django_site SET domain='HSTNM',name='HSTNM' WHERE id = 1;" | \
+    sed -e s,HSTNM,`hostname`,g | sudo -u pgsql psql fishtrip
+Under Linux pgsql username is actually postgres.
+13. Start test server:
+ python manage.py runserver
+14. See in a browser a site at address http://127.0.0.1:8000/
+
+Delete all *.pyc, *~, *.mo, filelist.new, and dirlist.new files:
+ $ find . \( -name '*~' -o -name '*.pyc' -o -name '*.mo' \) -delete ; rm -f fillist.new dirlist.new
+
+A list of directories can be obtained by a command
+ $ find . -name .svn -prune -type f -or \! -name .svn \! -name . -type d | sed s,^./,, | sort > dirlist.new
+Then newly added and deleted directories can be found by
+ $ diff dirlist dirlist.new
+
+A list of files can be obtained by a command
+ $ find . -name .svn -prune -type f -or -type f | sed s,^./,, | sort > fillist.new
+Then newly added and deleted file can be found by
+ $ diff fillist fillist.new
+

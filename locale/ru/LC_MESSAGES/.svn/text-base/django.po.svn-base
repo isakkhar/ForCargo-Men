@@ -1,0 +1,897 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-07 23:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: orders/models.py:14 testdrive/models.py:22
+msgid "orders"
+msgstr "Заказы"
+
+#: orders/models.py:15
+msgid "Order date"
+msgstr "Дата заказа"
+
+#: orders/views.py:34
+msgid "Reserved"
+msgstr "Заказано"
+
+#: orders/views.py:37
+msgid "Occupied"
+msgstr "Занято"
+
+#: orders/views.py:41 orders/views.py:44
+msgid "Available"
+msgstr "Свободно"
+
+#: orders/views.py:60
+msgid "ERROR: reserve function, saving order in DB"
+msgstr "Ошибка: reserve функция, сохранение данных в БД"
+
+#: orders/views.py:62 orders/views.py:78 orders/views.py:125
+msgid "You can not change the past"
+msgstr "Нельзя изменить прошлое"
+
+#: orders/views.py:76
+msgid "ERROR: release function, deleting order from DB"
+msgstr "Ошибка: release функция, удаление данных из БД"
+
+#: orders/views.py:103
+msgid "A week reservation table."
+msgstr "Таблица заказа времени на неделю."
+
+#: registration/forms.py:42
+msgid "username"
+msgstr "Имя пользователя"
+
+#: registration/forms.py:45
+msgid "email address"
+msgstr "Адрес электронной почты"
+
+#: registration/forms.py:47 startpage/models.py:44 testdrive/models.py:13
+msgid "phone number"
+msgstr "Номер телефона"
+
+#: registration/forms.py:50
+msgid "password"
+msgstr "Пароль"
+
+#: registration/forms.py:53
+msgid "password (again)"
+msgstr "Пароль (еще раз)"
+
+#: registration/forms.py:67
+msgid "This username is already taken. Please choose another."
+msgstr ""
+"Пользователь с таким именем уже существует. Пожалуйста, выберите другое имя."
+
+#: registration/forms.py:81
+msgid "You must type the same password each time"
+msgstr "Вы должны вводить один и тот же пароль каждый раз"
+
+#: registration/forms.py:90
+msgid "Phone number can only contain digits, spaces or symbols \"-, +, .,\""
+msgstr ""
+
+#: registration/forms.py:127
+msgid "I have read and agree to the Terms of Service"
+msgstr "Подтверждаю прочтение и согласие с условиями предоставления услуг"
+
+#: registration/forms.py:145
+msgid ""
+"This email address is already in use. Please supply a different email "
+"address."
+msgstr ""
+"Этот адрес электронной почты уже используется. Пожалуйста, сообщите другой "
+"адрес."
+
+#: registration/forms.py:172
+msgid ""
+"Registration using free email addresses is prohibited. Please supply a "
+"different email address."
+msgstr ""
+"Регистрация с таким адресом электронной почты запрещена. Пожалуйста, "
+"сообщите другой адрес."
+
+#: registration/models.py:227
+msgid "user"
+msgstr "Пользователь"
+
+#: registration/models.py:228
+msgid "activation key"
+msgstr "Ключ активации"
+
+#: registration/models.py:234
+msgid "registration profile"
+msgstr "Регистрационная запись"
+
+#: registration/models.py:235
+msgid "registration profiles"
+msgstr "Регистрационные записи"
+
+#: startpage/models.py:42
+msgid "user info"
+msgstr "Пользователь"
+
+#: startpage/models.py:43 testdrive/models.py:10
+msgid "address"
+msgstr "Адрес"
+
+#: startpage/models.py:46 testdrive/models.py:28
+msgid "comments"
+msgstr "Комментарии"
+
+#: startpage/views.py:25 templates/infostatic/base.html:77
+#: templates/registration/header.html:40
+msgid "Home"
+msgstr "Начало"
+
+#: startpage/views.py:26
+msgid "Number of hits: "
+msgstr "Число контактов: "
+
+#: startpage/views.py:27
+msgid "Number of ip-addresses: "
+msgstr "Число ip-адресов: "
+
+#: startpage/views.py:28
+msgid "Visitor number: "
+msgstr "Число посетителей: "
+
+#: startpage/views.py:61 templates/infostatic/base.html:57
+msgid "Why login is required?"
+msgstr "Почему требуется регистрация?"
+
+#: startpage/views.py:75
+msgid "All about DeKaSa-Service OY company"
+msgstr "Все о компании DeKaSa-Service OY"
+
+#: startpage/views.py:90
+msgid "List of services available at DeKaSa-Service OY"
+msgstr "Список услуг предоставляемых компанией DeKaSa-Service OY"
+
+#: startpage/views.py:91 startpage/views.py:137
+msgid "Scheduled maintenance"
+msgstr "Плановое обслуживание"
+
+#: startpage/views.py:91
+msgid "Oil change"
+msgstr "Замена масла"
+
+#: startpage/views.py:91
+msgid "Rustproof"
+msgstr "Защита от коррозии"
+
+#: startpage/views.py:92
+msgid "Sharing belt change"
+msgstr "Замена ремня"
+
+#: startpage/views.py:92
+msgid "Wheels change"
+msgstr "Смена колёс"
+
+#: startpage/views.py:93
+msgid "Tires balancing"
+msgstr "Балансировка колёс"
+
+#: startpage/views.py:93
+msgid "Tire storage"
+msgstr "Хранение колёс"
+
+#: startpage/views.py:94
+msgid "Inspection services"
+msgstr "Осмотр"
+
+#: startpage/views.py:94
+msgid "Other installation/repairs"
+msgstr "Прочие работы"
+
+#: startpage/views.py:96
+msgid "Fetching you car and returning it back"
+msgstr "Доставка и возврат автомобиля"
+
+#: startpage/views.py:97
+msgid "Cleaning service"
+msgstr "Мойка и чистка"
+
+#: startpage/views.py:97
+msgid "Fixing electrical problems"
+msgstr "Устранение проблем с электрикой"
+
+#: startpage/views.py:98
+msgid "Hydraulic hose repair"
+msgstr "Ремонт гидравлики"
+
+#: startpage/views.py:98
+msgid "Welding works"
+msgstr "Сварочные работы"
+
+#: startpage/views.py:99
+msgid "Brake repairs"
+msgstr "Ремонт тормозов"
+
+#: startpage/views.py:99
+msgid "Coupling change"
+msgstr "Замена шарниров"
+
+#: startpage/views.py:113
+msgid "Price List"
+msgstr "Список цен"
+
+#: startpage/views.py:114
+msgid "Cleaning services"
+msgstr "Мойка и чистка"
+
+#: startpage/views.py:115
+msgid "Special offer"
+msgstr "Специальное предложение"
+
+#: startpage/views.py:116
+msgid ""
+"Price of hour work is 50€ for cars and 60€ + VAT for others. Subsections "
+"present some other prices."
+msgstr ""
+"Цена работы за час 50€ для легковых автомобилей и 60€ + НДС для других "
+"автомобилей. С другими ценами можно познакомиться в соответствующих разделах "
+"сайта."
+
+#: startpage/views.py:122
+msgid "Washing by hand "
+msgstr "Ручная мойка "
+
+#: startpage/views.py:123
+msgid "Waxing"
+msgstr "Покрытие воском"
+
+#: startpage/views.py:124
+msgid "Polishing"
+msgstr "Полировка"
+
+#: startpage/views.py:125
+msgid "Hard waxing"
+msgstr "Усиленное покрытие воском"
+
+#: startpage/views.py:126
+msgid "Engine cleaning"
+msgstr "Чистка двигателя"
+
+#: startpage/views.py:127
+msgid "Vacuum cleaning"
+msgstr "Чистка пылесосом"
+
+#: startpage/views.py:128
+msgid "Inner cleaning"
+msgstr "Чистка салона"
+
+#: startpage/views.py:129
+msgid "Couch washing"
+msgstr "Помывка сидений"
+
+#: startpage/views.py:130
+msgid "Complete inner cleaning"
+msgstr "Полная чистка салона"
+
+#: startpage/views.py:131
+msgid "Leather cleaning"
+msgstr "Чистка кожи"
+
+#: startpage/views.py:132
+msgid "Complete cleaning"
+msgstr "Полная чистка"
+
+#: startpage/views.py:133
+msgid "Label removing"
+msgstr "Удаление стикеров"
+
+#: startpage/views.py:133
+msgid "call"
+msgstr "спрашивайте"
+
+#: startpage/views.py:137 startpage/views.py:138
+msgid "from"
+msgstr "от"
+
+#: startpage/views.py:138
+msgid "Winter maintenance"
+msgstr "Зимнее обслуживание"
+
+#: startpage/views.py:162
+msgid "Contact information"
+msgstr "Контактная информация"
+
+#: startpage/views.py:174
+msgid "Site map"
+msgstr "Карта сайта"
+
+#: templates/404.html:4 templates/404.html.py:7
+msgid "Page not found"
+msgstr "Страница не найдена."
+
+#: templates/404.html:8
+msgid "We're sorry, but the requested page could not be found."
+msgstr "Извините, запрашиваемая страница не может быть найдена."
+
+#: templates/500.html:4
+msgid "Server error (500)"
+msgstr "Ошибка сервера (500)"
+
+#: templates/500.html:7
+msgid "Server Error <em>(500)</em>"
+msgstr "Ошибка сервера <em>(500)</em>"
+
+#: templates/500.html:8
+msgid ""
+"There's been an error. It's been reported to the site administrators via e-"
+"mail and should be fixed shortly. Thanks for your patience."
+msgstr ""
+"Произошла ошибка. Об этом будет сообщено администратору сайта по электронной "
+"почте и ошибка будет исправлена в ближайшее время. Спасибо за ваше терпение."
+
+#: templates/clients/index.html:15
+msgid "Client are not available"
+msgstr "Клиент с таким именем отсутствует"
+
+#: templates/clients/index.html:17
+msgid "Add client"
+msgstr "Добавить информацию о клиенте"
+
+#: templates/infostatic/about_us.html:11
+msgid "Facilities"
+msgstr ""
+
+#: templates/infostatic/about_us.html:16
+msgid "Brief history of DeKaSa-Service OY"
+msgstr "Краткая история фирмы DeKaSa-Service OY"
+
+#: templates/infostatic/about_us.html:17
+msgid ""
+"DeKaSa-Service OY has started operating in year 2009. Business Identity Code "
+"is: 2239960-6."
+msgstr ""
+"Компания DeKaSa-Service OY начала свою работу в 2009 г. Регистрационный "
+"номер: 2239960-6."
+
+#: templates/infostatic/about_us.html:18
+msgid "In December 2010, the company moved to a new location in Tattarisuo."
+msgstr ""
+
+#: templates/infostatic/about_us.html:19
+msgid "Our experts"
+msgstr "Наши эксперты"
+
+#: templates/infostatic/about_us.html:20
+msgid ""
+"Our experts have all the knowledge and facilities needed for service or "
+"repairs of your car."
+msgstr ""
+"Наши эксперты обладают соответствующими знаниями и опытом, располагают "
+"необходимым оборудованием для диагностики, ремонта и технического "
+"обслуживания автомобилей."
+
+#: templates/infostatic/about_us.html:22
+msgid "Our partners logos are presented in the bottom of this page."
+msgstr "Логотипы наших партнёров  представлены в нижней части этой страницы."
+
+#: templates/infostatic/base.html:43 templates/registration/header.html:28
+msgid "Welcome,"
+msgstr "Добро пожаловать"
+
+#: templates/infostatic/base.html:47
+#: templates/registration/password_change_done.html:6
+msgid "Change password"
+msgstr "Изменить пароль"
+
+#: templates/infostatic/base.html:49
+msgid "Reset password"
+msgstr "Переустановить пароль"
+
+#: templates/infostatic/base.html:51 templates/registration/header.html:32
+#: templates/registration/password_change_done.html:7
+msgid "Log out"
+msgstr "Выйти"
+
+#: templates/infostatic/base.html:54
+msgid "Login"
+msgstr "Войти"
+
+#: templates/infostatic/base.html:79
+msgid "Site Map"
+msgstr "Карта сайта"
+
+#: templates/infostatic/base.html:96 templates/infostatic/index.html:35
+msgid "Registration"
+msgstr "Регистрация"
+
+#: templates/infostatic/base.html:99 templates/infostatic/index.html:29
+msgid "About us"
+msgstr "О нас"
+
+#: templates/infostatic/base.html:100 templates/infostatic/index.html:21
+msgid "Services"
+msgstr "Услуги"
+
+#: templates/infostatic/base.html:101
+msgid "Orders (test version)"
+msgstr "Заказы (тестовая версия)"
+
+#: templates/infostatic/base.html:103 templates/infostatic/base.html.py:115
+msgid "Prices"
+msgstr "Цены"
+
+#: templates/infostatic/base.html:118 templates/infostatic/index.html:26
+msgid "Contacts"
+msgstr "Контактная информация"
+
+#: templates/infostatic/base.html:123
+msgid "DeKaSa Administration"
+msgstr "Администрация DeKaSa"
+
+#: templates/infostatic/base.html:128
+msgid "Documentation"
+msgstr "Документация"
+
+#: templates/infostatic/base.html:132
+msgid "Statistics"
+msgstr "Статистика"
+
+#: templates/infostatic/base.html:162
+msgid "Powered by "
+msgstr "Powered by "
+
+#: templates/infostatic/base_site.html:10
+#: templates/infostatic/base_site.html:13 templates/infostatic/index.html:17
+#: templates/registration/breand.html:5
+msgid "DeKaSa-Service OY"
+msgstr "DeKaSa-Service OY"
+
+#: templates/infostatic/contacts.html:14 templates/infostatic/contacts.html:15
+msgid "DeKaSa-Service OY in GoogleMap"
+msgstr "DeKaSa-Service OY на карте GoogleMap"
+
+#: templates/infostatic/contacts.html:17
+msgid "View"
+msgstr "Посмотреть"
+
+#: templates/infostatic/contacts.html:19
+msgid "DeKaSa-Service OY in a larger map"
+msgstr "DeKaSa-Service OY на большой карте"
+
+#: templates/infostatic/contacts.html:26
+msgid "Our address is Kytkintie 5, Helsinki 00770."
+msgstr "Наш адрес Kytkintie 5, Хельсинки 00770."
+
+#: templates/infostatic/contacts.html:27
+msgid ""
+"You may contact us at the phone numbers: +358-45-2377979, +358-46-8104153. "
+msgstr ""
+"Вы можете связаться с нами по телефонам: +358-45-2377979, +358-46-8104153. "
+
+#: templates/infostatic/contacts.html:29
+msgid "Our partner"
+msgstr "Наш партнёр"
+
+#: templates/infostatic/contacts.html:32
+msgid ""
+"provides towing service 24 hours a day, their phone number is "
+"+358-80-0122333 (Helsinki), or +358-40-0780007 (other Finland)."
+msgstr ""
+"предоставляет услуги буксировки 24 часа в сутки. Ему Вы можете звонить по "
+"следующим номерам: +358 80-0122333 (Хельсинки), +358-40-0780007 (остальная "
+"Финляндия)."
+
+#: templates/infostatic/index.html:11 templates/infostatic/index.html.py:12
+msgid "Truck in DeKaSa"
+msgstr "Грузовик в DeKaSa"
+
+#: templates/infostatic/index.html:18
+msgid ""
+"DeKaSa-Service OY car and truck repairing company is located in Helsinki "
+"near Ring III road (Kehä III, road E18, or road 50). "
+msgstr ""
+"Авторемонтная компания DeKaSa-Service OY расположена в Хельсинки недалеко от "
+"3-го кольца (Kehä III, E18, дорога номер 50). "
+
+#: templates/infostatic/index.html:19
+msgid ""
+"DeKaSa-Service OY provides all kinds of car and truck services, works, "
+"repairs, and cleaning. "
+msgstr ""
+"Мы обеспечиваем все виды работ по обслуживанию и ремонту легковых и грузовых "
+"автомобилей, включая мойку и чистку. "
+
+#: templates/infostatic/index.html:20
+msgid "These services are described in section "
+msgstr "Эти услуги описаны в разделе "
+
+#: templates/infostatic/index.html:22
+msgid " more detailed. "
+msgstr "подробнее. "
+
+#: templates/infostatic/index.html:23
+msgid "We will understand you an English, Russian or Finnish."
+msgstr " Мы поймем вас на английском, русском или финском языках."
+
+#: templates/infostatic/index.html:25
+msgid "Our address, map and our contact information you can find on the page "
+msgstr ""
+"Наш адрес, карту и нашу контактную информацию вы можете найти на странице "
+
+#: templates/infostatic/index.html:26 templates/infostatic/index.html.py:29
+#: templates/infostatic/index.html:39
+msgid "."
+msgstr "."
+
+#: templates/infostatic/index.html:28
+msgid ""
+"The brief history of DeKaSa-Service OY company and information about our "
+"partners is presented in section "
+msgstr ""
+"Краткая история компании DeKaSa-Service OY и информация о наших партнёрах "
+"представлена в разделе "
+
+#: templates/infostatic/index.html:31 templates/orders/daytable.html:34
+msgid "Orders"
+msgstr "Заказы"
+
+#: templates/infostatic/index.html:32
+msgid " functions require authentication. "
+msgstr " требуют авторизации. "
+
+#: templates/infostatic/index.html:33
+msgid "If you are a new user you can register via e-mail by link "
+msgstr ""
+"Если Вы новый пользователь, Вы можете зарегистрироваться через электронную "
+"почту по ссылке "
+
+#: templates/infostatic/index.html:35
+msgid ". "
+msgstr ". "
+
+#: templates/infostatic/index.html:36
+msgid "Registration via SMS will be possible later, in the next version."
+msgstr "Регистрация через SMS будет доступна позже, в следующей версии."
+
+#: templates/infostatic/index.html:38
+msgid "You can also read "
+msgstr "Вы можете также прочесть "
+
+#: templates/infostatic/index.html:39
+msgid "why login is required"
+msgstr "почему требуется регистрация"
+
+#: templates/infostatic/logneed.html:8
+msgid ""
+"Some functions require authentication. Without authentication somebody might "
+"change or delete your reservation, or reserve all time so that you can not "
+"find free time."
+msgstr ""
+"Некоторые функции требуют авторизации. Без авторизации кто-нибудь другой "
+"может изменить время вашего заказа или удалить его, или зарезервировать все "
+"время, и вы не сможете найти свободное для заказа время."
+
+#: templates/infostatic/logneed.html:10
+msgid "If you do not have an account, please follow the "
+msgstr ""
+"Если Вы еще не зарегистрированы на нашем сайтe, пожалуйста, сделайте это на "
+"странице "
+
+#: templates/infostatic/logneed.html:12
+msgid "registration "
+msgstr "Регистрация"
+
+#: templates/infostatic/logneed.html:12
+msgid "link."
+msgstr "."
+
+#: templates/infostatic/prices.html:11 templates/infostatic/prices.html:12
+msgid "DeKaSa building"
+msgstr ""
+
+#: templates/infostatic/prices.html:22
+msgid "Professional car cleaning"
+msgstr "Профессиональная мойка и чистка"
+
+#: templates/infostatic/prices.html:25
+msgid "Kind of work"
+msgstr "Тип работ"
+
+#: templates/infostatic/prices.html:26
+msgid "Car"
+msgstr "Легковая"
+
+#: templates/infostatic/prices.html:27
+msgid "Van"
+msgstr "Фургон"
+
+#: templates/infostatic/service.html:10 templates/infostatic/service.html:11
+msgid "Work place of DeKaSa-Service"
+msgstr "Краткая история фирмы DeKaSa-Service OY"
+
+#: templates/infostatic/service.html:18
+msgid " All the works and services in one place:"
+msgstr "Все виды работ и услуг в одном месте:"
+
+#: templates/infostatic/service.html:26
+msgid " More services:"
+msgstr "Дополнительный сервис:"
+
+#: templates/orders/daytable.html:21
+msgid ""
+"Ordering is not in use. It's showing only for testing. The time reservation "
+"is not yet guaranteed!"
+msgstr ""
+"Резервирование времени пока не работает. Страница используется только для "
+"тестирования. Время заказa еще не гарантировано!"
+
+#: templates/orders/daytable.html:37
+msgid "Date Time"
+msgstr "Дата Время"
+
+#: templates/registration/activate.html:7
+msgid "Account successfully activated"
+msgstr "Регистрация прошла успешно"
+
+#: templates/registration/activate.html:9 templates/registration/login.html:30
+msgid "Log in"
+msgstr "Логин"
+
+#: templates/registration/activate.html:12
+msgid "Account activation failed"
+msgstr "Регистрация не удалась"
+
+#: templates/registration/logged_out.html:5
+#: templates/registration/logout.html:5
+msgid "Thanks for spending some quality time with the Web site today."
+msgstr "Спасибо за время, проведенное на нашем сайте."
+
+#: templates/registration/login.html:20
+msgid "Username:"
+msgstr "Имя пользователя:"
+
+#: templates/registration/login.html:24
+msgid "Password:"
+msgstr "Пароль:"
+
+#: templates/registration/login.html:37
+msgid "Forgot password"
+msgstr "Забыли пароль"
+
+#: templates/registration/login.html:38
+msgid "Reset it"
+msgstr "Установить его"
+
+#: templates/registration/login.html:40
+msgid "Not member"
+msgstr "Нет в регистре"
+
+#: templates/registration/login.html:41
+msgid "Register"
+msgstr "Регистр"
+
+#: templates/registration/password_change_done.html:10
+#: templates/registration/password_change_done.html:13
+msgid "Password change successful"
+msgstr "Пароль успешно изменен"
+
+#: templates/registration/password_change_done.html:14
+msgid "Your password was changed."
+msgstr "Ваш пароль был изменен."
+
+#: templates/registration/password_change_form.html:4
+#: templates/registration/password_change_form.html:7
+msgid "Password change"
+msgstr "Изменить пароль"
+
+#: templates/registration/password_change_form.html:8
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+"В целях безопасности, пожалуйста, введите старый пароль. Затем дважды "
+"введите новый пароль, чтобы мы смогли проверить, что пароль набран верно."
+
+#: templates/registration/password_change_form.html:13
+msgid "Old password:"
+msgstr "Старый пароль:"
+
+#: templates/registration/password_change_form.html:18
+#: templates/registration/password_reset_confirm.html:14
+msgid "New password:"
+msgstr "Новый пароль:"
+
+#: templates/registration/password_change_form.html:23
+#: templates/registration/password_reset_confirm.html:19
+msgid "Confirm password:"
+msgstr "Подтвердите пароль:"
+
+#: templates/registration/password_change_form.html:26
+#: templates/registration/password_reset_confirm.html:22
+msgid "Change my password"
+msgstr "Изменение пароля"
+
+#: templates/registration/password_reset_confirm.html:4
+#: templates/registration/password_reset_form.html:4
+#: templates/registration/password_reset_form.html:7
+msgid "Password reset"
+msgstr "Переустановить пароль"
+
+#: templates/registration/password_reset_confirm.html:8
+msgid "Enter new password"
+msgstr "Введите новый пароль"
+
+#: templates/registration/password_reset_confirm.html:9
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+"Пожалуйста, дважды введите новый пароль, чтобы мы смогли проверить, что "
+"пароль набран верно."
+
+#: templates/registration/password_reset_confirm.html:26
+msgid "Password reset unsuccessful"
+msgstr "Переустановка пароля не удалась"
+
+#: templates/registration/password_reset_confirm.html:27
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a new password reset."
+msgstr ""
+"Ссылка пароля является недействительной, возможно потому, что она уже "
+"использовалась. Пожалуйста, сделайте новый запрос."
+
+#: templates/registration/password_reset_done.html:4
+#: templates/registration/password_reset_done.html:7
+msgid "Password reset successful"
+msgstr "Переустановка пароля прошла успешно"
+
+#: templates/registration/password_reset_done.html:8
+msgid ""
+"We've e-mailed you instructions for setting your password to the e-mail "
+"address you submitted. You should be receiving it shortly."
+msgstr ""
+"По указанному Вами адресу электронной почты нами отправлена инструкция по "
+"установке пароля. Вы должны получить ее в ближайшее время."
+
+#: templates/registration/password_reset_email.html:3
+msgid "You're receiving this e-mail because you requested a password reset"
+msgstr ""
+"Вы получили это письмо, так как Вы запрашивали пароль для DeKaSa-Service OY "
+"сайта."
+
+#: templates/registration/password_reset_email.html:4
+#, python-format
+msgid "for your user account at %(site_name)s"
+msgstr "для Вашей регистрации на сайте %(site_name)s"
+
+#: templates/registration/password_reset_email.html:6
+msgid "Please go to the following page and choose a new password:"
+msgstr "Пожалуйста, перейдите на следующую страницу и выберите новый пароль:"
+
+#: templates/registration/password_reset_email.html:10
+msgid "Your username, in case you've forgotten:"
+msgstr "Ваше пользовательское имя, если Вы его забыли:"
+
+# : templates/registration/password_reset_email.html:11
+#: templates/registration/password_reset_email.html:11
+msgid "Thanks for using our site!"
+msgstr "Спасибо за использование нашего сайта!"
+
+#: templates/registration/password_reset_email.html:12
+#, python-format
+msgid "The %(site_name)s team"
+msgstr "%(site_name)s команда"
+
+#: templates/registration/password_reset_form.html:8
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll e-mail "
+"instructions for setting a new one."
+msgstr ""
+"Забыли пароль? Введите адрес Вашей электронной почты ниже, и мы вышлем Вам "
+"инструкцию по установке нового пароля."
+
+#: templates/registration/password_reset_form.html:12
+msgid "E-mail address:"
+msgstr "Адресс эл.почты:"
+
+#: templates/registration/password_reset_form.html:14
+msgid "Reset my password"
+msgstr "Переустановить пароль"
+
+#: templates/registration/registration_complete.html:5
+msgid "You are now registered. Activation email sent."
+msgstr "Вы зарегистрированы. Сообщение об активации отправлено."
+
+#: templates/registration/registration_form.html:8
+msgid "Submit"
+msgstr "Подтвердить"
+
+#: templates/registration/registration_form.html:15
+msgid ""
+"We recommend to use your car registration number as the username. Your "
+"information (e-mail and password) will not be transferred to any third "
+"party. The username can be given to another user, after half a year without "
+"use. This way a new owner of the car can use it if you sold your car."
+msgstr ""
+"Мы рекомендуем использовать регистрационный номер Вашего автомобиля в "
+"качестве имени пользователя. Ваши данные (адрес эл.почты, пароль) не будут "
+"переданы третьим лицам. Если Вы не используете имя пользователя в течение "
+"полугода, оно может быть отдано другому лицу. Например, в случае продажи "
+"автомобиля новый владелец автомобиля сможет таким образом воспользоваться "
+"этим именем."
+
+#: testdrive/models.py:9
+msgid "client name"
+msgstr "имя клиента"
+
+#: testdrive/models.py:11
+msgid "contact person"
+msgstr "контактное лицо"
+
+#: testdrive/models.py:12
+msgid "e-mail address"
+msgstr "Адрес электронной почты"
+
+#: testdrive/models.py:23
+msgid "order number"
+msgstr "Номер заказа"
+
+#: testdrive/models.py:24
+msgid "address from"
+msgstr "Адрес откуда"
+
+#: testdrive/models.py:25
+msgid "address to"
+msgstr "Адрес куда"
+
+#: testdrive/models.py:26
+msgid "Day of transport."
+msgstr "Дата перевозки."
+
+#: testdrive/models.py:27
+msgid "weight"
+msgstr "Вес"
+
+#: testdrive/views.py:51
+msgid "List of the clients"
+msgstr "Список клиентов"
+
+#: testdrive/views.py:77
+msgid "New order is saved"
+msgstr "Новый заказ сохранен"
+
+#: testdrive/views.py:78
+msgid "Client "
+msgstr "Клиент"
+
+#: testdrive/views.py:78
+msgid " can add new order."
+msgstr "можете добавить новый заказ."
+
+#: testdrive/views.py:108
+msgid "Add a new client"
+msgstr "Добавить информацию о новом клиенте"
+
+#: testdrive/views.py:110
+msgid "New client is saved"
+msgstr "Информация о новом клиенте сохранена"
+
+#: viewtools/views.py:26
+#, python-format
+msgid "No translation for language %s."
+msgstr "Нет перевода на %s язык."
+
+#: viewtools/views.py:40
+msgid "Sorry, this page is not ready yet."
+msgstr "Извините, эта страница еще не готова."

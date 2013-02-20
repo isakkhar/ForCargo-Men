@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-04-09 15:38+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: staticfiles/js/calendar.js:24
+msgid ""
+"January February March April May June July August September October November "
+"December"
+msgstr "Январь Февраль Март Апрель Май Июнь Июль Август Сентябрь Октябрь Ноябрь "
+"Декабрь"
+
+#: staticfiles/js/calendar.js:25
+msgid "S M T W T F S"
+msgstr "В П В С Ч П С"
+
+#: staticfiles/js/admin/DateTimeShortcuts.js:47
+#: staticfiles/js/admin/DateTimeShortcuts.js:81
+msgid "Now"
+msgstr "Сейчас"
+
+#: staticfiles/js/admin/DateTimeShortcuts.js:51
+msgid "Clock"
+msgstr "Часы"
+
+#: staticfiles/js/admin/DateTimeShortcuts.js:78
+msgid "Choose a time"
+msgstr "Выберите время"
+
+#: staticfiles/js/admin/DateTimeShortcuts.js:82
+msgid "Midnight"
+msgstr "Полночь"
+
+#: staticfiles/js/admin/DateTimeShortcuts.js:83
+msgid "6 a.m."
+msgstr "6 часов"
+
+#: staticfiles/js/admin/DateTimeShortcuts.js:84
+msgid "Noon"
+msgstr "Полдень"
+
+#: staticfiles/js/admin/DateTimeShortcuts.js:88
+#: staticfiles/js/admin/DateTimeShortcuts.js:183
+msgid "Cancel"
+msgstr "Отменить"
+
+#: staticfiles/js/admin/DateTimeShortcuts.js:128
+#: staticfiles/js/admin/DateTimeShortcuts.js:177
+msgid "Today"
+msgstr "Сегодня"
+
+#: staticfiles/js/admin/DateTimeShortcuts.js:132
+msgid "Calendar"
+msgstr "Календарь"
+
+#: staticfiles/js/admin/DateTimeShortcuts.js:175
+msgid "Yesterday"
+msgstr "Вчера"
+
+#: staticfiles/js/admin/DateTimeShortcuts.js:179
+msgid "Tomorrow"
+msgstr "Завтра"

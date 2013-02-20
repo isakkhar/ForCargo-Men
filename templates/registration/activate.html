@@ -1,0 +1,14 @@
+{% extends "registration/breand.html" %}
+{% load i18n %}
+{% load tabind %}
+
+{% block content %}
+  {% if account %}
+    <p>{% trans "Account successfully activated" %}</p>
+    <p><a tabindex="{% inc %}" href="{% url auth_login %}">
+      {% trans "Log in" %}</a>
+    </p>
+  {% else %}
+  <p>{% trans "Account activation failed" %}</p>
+  {% endif %}
+{% endblock %}

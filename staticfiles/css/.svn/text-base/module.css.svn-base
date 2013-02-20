@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/* django_logistics project MODULES styles */
+
+.module {
+  margin-bottom: 0.35em;
+}
+
+.module p, .module ul, .module h3, .module h4, .module dl, .module pre {
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+}
+
+.module p span.right {
+  float: right;
+}
+
+.module blockquote {
+  margin-left: 0.85em;
+}
+
+.module ul, .module ol {
+  margin-left: 1.5em;
+}
+
+.module h3 {
+  margin-top: .6em;
+}
+
+.module h2, .module caption, .inline-group h2 {
+  margin: 0;
+  padding: 0.15em 0.35em 0.2em 0.35em;
+  font-size: 1em;
+  text-align: center; /*left;*/
+  font-weight: bold;
+  background: #7CA0C7;
+  color: white;
+}
+
+.module table {
+  border-collapse: collapse;
+}
+
+.module table a.green:link, .module table a.green:visited {
+  color: #00FF00;
+  background-color: inherit;
+  text-decoration: none;
+  font-weight:bold;
+}
+
+.module table a.green:hover {
+  text-decoration: underline;
+}
+
+.module table a.blue:link,.module table a.blue:visited {
+  color: #11d;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+.module table a.blue:hover {
+  text-decoration: underline
+}
+
+.module table span.red {
+  color: #FF0000;
+  background-color: inherit;
+  font-style:italic;
+}
+
+/* TABLES */
+
+table {
+  border-collapse: collapse;
+  border-color: #ccc;
+}
+
+td, th {
+  font-size: 0.85em;
+  line-height: 1em;
+  border-left: 0.07em solid #ddd;
+  border-bottom: 0.07em solid #eee;
+  border-right: 0.07em solid #ddd;
+  vertical-align: top;
+  padding: 0.35em;
+  font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+}
+
+td.prices {
+  text-align: right;
+}
+
+th {
+  text-align: center;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+thead th, tfoot td {
+  color: #666;
+  background-color: #E8E8E8;
+  padding: 0.15em 0.35em;
+  font-size: 0.85em;
+  border-left: 0.07em solid #ddd;
+  border-bottom: 0.07em solid #ddd;
+}
+
+tfoot td {
+  border-bottom: none;
+  border-top: 0.07em solid #ddd;
+}
+
+thead th.optional {
+  font-weight: normal !important;
+}
+

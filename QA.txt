@@ -1,0 +1,17 @@
+The basic links for web site validation (Quality Assurance http://www.w3.org/QA/Tools/):
+
+1. Unicorn - W3C's Unified Validator (http validator + css validator)
+http://validator.w3.org/unicorn/
+
+2. Link Checker
+http://validator.w3.org/checklink/
+
+3. W3C mobileOK Checker
+http://validator.w3.org/mobile/
+
+4.Semantic Data Extractor
+http://www.w3.org/2003/12/semantic-extractor.html
+
+5. Web Tools for Quality, Accessibility, Standards Compliance.
+http://valet.webthing.com/
+

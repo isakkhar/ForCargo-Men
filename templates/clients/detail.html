@@ -1,0 +1,13 @@
+{% extends "infostatic/base_site.html" %}
+{% load i18n %}
+
+
+{% block content %}
+    <h1>{{ cl.client_name }}</h1>
+    <ul>
+    {% for order in cl.order_set.all %}
+         <li>{{order.order_number}} Date: {{order.transp_date}}</li>
+    {% endfor %}
+    </ul>
+    <a href="{{act}}">Add order</a>
+{% endblock %}

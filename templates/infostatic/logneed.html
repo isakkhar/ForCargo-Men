@@ -1,0 +1,15 @@
+{% extends "infostatic/base_site.html" %}
+{% load i18n %}
+{% load tabind %}
+
+{% block content %}
+  <div id="content-main">
+    <h2>{{ title }}</h2>
+    <p>{% trans 'Some functions require authentication. Without authentication somebody might change or delete your reservation, or reserve all time so that you can not find free time.' %}
+    </p> 
+    <p>{% trans 'If you do not have an account, please follow the ' %}
+      <a tabindex="{% inc %}" href="/accounts/register/">
+      {% trans 'registration ' %}</a>{% trans 'link.' %}
+    </p>
+  </div>
+{% endblock %}

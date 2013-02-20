@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/587/trunk/locale/fi/LC_MESSAGES
+END
+djangojs.po
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/491/trunk/locale/fi/LC_MESSAGES/djangojs.po
+END
+django.po
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/587/trunk/locale/fi/LC_MESSAGES/django.po
+END

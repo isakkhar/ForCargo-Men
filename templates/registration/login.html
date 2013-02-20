@@ -1,0 +1,45 @@
+{% extends "registration/header.html" %}
+{% load i18n %}
+{% load tabind %}
+
+{% block extrastyle %}
+  <link rel="stylesheet" type="text/css" href="/staticfiles/css/login.css" />
+{% endblock %}
+
+{% block bodyclass %}login{% endblock %}
+{% block content_title %}{% endblock %}
+{% block branding %}<h1> DeKaSa-Service OY</h1>{% endblock %}
+
+{% if error_message %}
+  <p class="errornote">{{ error_message }}</p>
+{% endif %}
+
+{% block content %}
+  <form method="post" id="login-form" action="{% url django.contrib.auth.views.login %}">
+    <div class="form-row">
+      <label for="id_username">{% trans 'Username:' %}</label>
+      <input type="text" name="username" id="id_username" tabindex="{% inc %}" />
+    </div>
+    <div class="form-row">
+      <label for="id_password">{% trans 'Password:' %}</label>
+      <input type="password" name="password" id="id_password" tabindex="{% inc %}" />
+      <input type="hidden" name="this_is_the_login_form" value="1" />
+    </div>
+    <div class="submit-row">
+      <label>&nbsp;</label>
+      <input type="submit" value="{% trans 'Log in' %}" tabindex="{% inc %}" />
+      <input type="hidden" name="next" value="{{ next|escape }}" />
+    </div>
+  </form>
+  <script type="text/javascript">
+    document.getElementById("id_username").focus()
+  </script>
+  <p>{% trans "Forgot password" %}? <a tabindex="{% inc %}" href="{% url auth_password_reset %}">
+    {% trans "Reset it" %}</a>!
+  </p>
+  <p>{% trans "Not member" %}? <a tabindex="{% inc %}" href="{% url registration_register %}">
+    {% trans "Register" %}</a>!
+  </p>
+{% endblock %}
+
+

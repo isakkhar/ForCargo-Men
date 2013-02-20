@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+{% spaceless %}
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{ LANGUAGE_CODE }}"
+      lang="{{ LANGUAGE_CODE }}"
+      {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
+<head>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  <meta name="robots" content="index" />
+  <meta name="author" content="Svetlana Chukhareva" />
+  <meta name="description" content="DeKaSa-Service OY is a car and truck
+      repairing company in Helsinki, near Kehä III. The company can serve
+      using English, Russian, or Finnish. Our partners can fetch your vehicle
+      any time around the clock." />
+  <meta name="keywords" content="dekasa, car, truck, service, repair, cleaning,
+      автомобили, грузовики, ремонт, авторемонт, починка, мойка, чистка,
+      auto, autopalvelu, autokorjaamo, korjamo, pesu" />
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" type="text/css"
+      href="{% block stylesheet %}/staticfiles/css/base.css{% endblock %}" />
+  {% block extrastyle %}{% endblock %}
+  <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css"
+      href="{% block stylesheet_ie %}/staticfiles/css/ie.css{% endblock %}" />
+  <![endif]-->
+  {% if LANGUAGE_BIDI %}
+  <link rel="stylesheet" type="text/css"
+    href="{% block stylesheet_rtl %}/staticfiles/css/rtl.css{% endblock %}" />
+  {% endif %}
+  {% block extrahead %}{% endblock %}
+  {% block blockbots %}{% endblock %}
+</head>
+{% load i18n %}{% load tabind %}
+<body>
+  <!-- {% inc 0 %} --> {# this gives initial value for tabindex #}
+  <!-- Container -->
+  <div id="container">
+    <!-- Header -->
+    <div id="header">
+      <div id="branding">{% block branding %}{% endblock %}</div>
+      <div id="user-tools">
+        {% if user.is_authenticated and user.is_active %}
+          {% trans 'Welcome,' %}
+          <strong>{% firstof user.first_name user.username %}</strong>.
+          {% block userlinks %}
+            <a tabindex="{% inc %}" href="/accounts/password/change/">
+              {% trans 'Change password' %}</a> /
+            <a tabindex="{% inc %}" href="/accounts/password/reset/">
+              {% trans 'Reset password' %}</a> /
+            <a tabindex="{% inc %}" href="/accounts/logout/">
+              {% trans 'Log out' %}</a>
+          {% endblock %}
+        {% else %}
+          <a tabindex="{% inc %}" href="/accounts/login/">{% trans 'Login' %}
+          </a> /
+          <a tabindex="{% inc %}" href="/logneed/">
+            {% trans 'Why login is required?' %}
+          </a>
+        {% endif %}
+        <p>
+        {% block setlang %}
+          {% for lang in LANGUAGES %}
+            <a tabindex="{% inc %}" class="lng"
+               href="/tools/i18n/setlang/{{ lang.0 }}">
+              <img src="/staticfiles/img/flags/{{ lang.0 }}.gif" 
+                   alt="{{ lang.1 }} flag" height="15" width="20" />{{ lang.1 }}
+            </a>
+          {% endfor %}
+        {% endblock %}
+        </p>
+      </div>
+    </div>
+    <!-- END Header -->
+
+    {% block breadcrumbs %}
+      <div class="breadcrumbs">
+        <a tabindex="{% inc %}" href="/">{% trans 'Home' %}</a>
+        {% if title %} &rsaquo; {{ title }}{% endif %} |
+        <a tabindex="{% inc %}" href="/sitemap/">{% trans 'Site Map' %}</a>
+      </div>
+    {% endblock %}
+
+    {% if messages %}
+      <ul class="messagelist">
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <!-- Content -->
+    {% block sidebar %}
+      <div id="nav_bar">
+        {% if user.is_anonymous %}
+          <p><a tabindex="{% inc %}" href="/accounts/register/">
+            {% trans 'Registration' %}
+          </a></p>
+        {% endif %}
+        <p><a tabindex="{% inc %}" href="/aboutus/">{% trans 'About us' %}</a></p>
+        <p><a tabindex="{% inc %}" href="/service/">{% trans 'Services' %}</a></p>
+        <p><a tabindex="{% inc %}" href="/orders/">{% trans 'Orders (test version)' %}</a></p>
+        {% if prlist %}
+          <a tabindex="{% inc %}" href="/prices/">{% trans 'Prices' %}</a>
+          <ul class="plainlist">
+            {% for elm in prlist %}
+              <li>
+                <a tabindex="{% inc %}"
+                    href="/prices/{{elm.0}}/">
+                  {{elm.1}}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p><a tabindex="{% inc %}" href="/prices/">{% trans 'Prices' %}</a>
+          </p>
+        {% endif %}
+        <p><a tabindex="{% inc %}" href="/contacts/">{% trans 'Contacts' %}</a>
+        </p>
+        {% if user.is_authenticated and user.is_staff %}
+          {% if user.is_superuser %}
+            <p><a tabindex="{% inc %}" href="/admindks/">
+              {% trans 'DeKaSa Administration' %}
+            </a></p>
+            {% url django-admindocs-docroot as docsroot %}
+            {% if docsroot %}
+              <p><a tabindex="{% inc %}" href="{{ docsroot }}">
+                  {% trans 'Documentation' %}</a></p>
+            {% endif %}
+          {% endif %}
+          {% if numtitle or iptitle or vnumtitle %}
+            <h4>{% trans 'Statistics' %}</h4>
+            <ul>
+              {% if numtitle %}<li>{{numtitle}}{{hitnum}}</li>{% endif %}
+              {% if iptitle %}<li>{{iptitle}}{{ipnum}}</li>{% endif %}
+              {% if vnumtitle %}<li>{{vnumtitle}}{{vnum}}</li>{% endif %}
+            </ul>
+          {% endif %}
+        {% endif %}
+      </div>
+    {% endblock %}
+    {% block right_sidebar %}{% endblock %}
+    <div id="content">
+      {% block pretitle %}{% endblock %}
+      {% block content_title %}{% endblock %}
+      {% block content %}
+        {% block object-tools %}{% endblock %}
+        {{ content }}
+      {% endblock %}
+      <br class="clear" />
+    </div>
+    <!-- END Content -->
+
+    <div id="partners">
+      {% block partners-logo %}{%endblock %}
+      <br class="clear" />
+    </div>
+
+    {% block footer %}
+    <div id="footer">
+      <p>
+        {% trans 'Powered by ' %}
+        <a href = "http://www.djangoproject.com/">Django</a>
+        |
+        <a href="http://validator.w3.org/check?uri=referer">
+          Valid XHTML 1.0 Strict
+        </a>
+        |
+        <a href="http://jigsaw.w3.org/css-validator/check?uri=referer">
+          Valid CSS
+        </a>
+        | Copyright ©
+        <a href="http://code.google.com/p/django-logistics/">django-logistics
+        </a>
+      </p>
+    </div>
+    {% endblock %}
+  </div>
+  <!-- END Container -->
+</body>
+</html>
+{% endspaceless %}
+

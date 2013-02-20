@@ -1,0 +1,17 @@
+{% extends "infostatic/base_site.html" %}
+{% load i18n %}
+{% load tabind %}
+
+{% block content %}
+  {% for elm in link_list %}
+    {% if elm.0 %}
+      <ul class="tree">
+        <li class="list{{elm.2}}">
+          <a tabindex="{% inc %}" href="{{elm.0}}">{{elm.1}}</a> {{elm.3}}
+        </li>
+      </ul>
+    {% else %}
+      <h2 class="subhead">{{elm.1}}</h2>
+    {% endif %}
+  {% endfor %}
+{% endblock %}

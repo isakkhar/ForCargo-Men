@@ -1,0 +1,128 @@
+@charset "utf-8";
+@import url('widgets.css');
+
+/* FORM ROWS */
+
+.form-row {
+  overflow: hidden;
+  padding: 0.6em 0.85em;
+  font-size: 0.8em;
+  border-bottom: 0.07em solid #eee;
+}
+
+.form-row img, .form-row input {
+  vertical-align: middle;
+}
+
+form .form-row p {
+  padding-left: 0;
+  font-size: 0.8em;
+}
+
+/* FORM LABELS */
+
+form h4 {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+label {
+  font-weight: normal !important;
+  color: #666;
+  font-size: 0.85em;
+}
+
+.required label, label.required {
+  font-weight: bold !important;
+  color: #333 !important;
+}
+
+/* RADIO BUTTONS */
+
+form ul.radiolist li {
+  list-style-type: none;
+}
+
+form ul.radiolist label {
+  float: none;
+  display: inline;
+}
+
+form ul.inline {
+  margin-left: 0;
+  padding: 0;
+}
+
+form ul.inline li {
+  float: left;
+  padding-right: 0.5em;
+}
+
+/* MONOSPACE TEXTAREAS */
+
+fieldset.monospace textarea {
+  font-family: "Bitstream Vera Sans Mono",Monaco,"Courier New",Courier,monospace;
+}
+
+/* SUBMIT ROW */
+
+.submit-row {
+  padding: 0.35em 0.5em;
+  text-align: right;
+  background: white url(../img/admin/nav-bg.gif) 0 100% repeat-x;
+  border: 0.07em solid #ccc;
+  margin: 0.35em 0;
+  overflow: hidden;
+}
+
+.submit-row input {
+  margin: 0 0 0 0.35em;
+}
+
+.submit-row p {
+  margin: 0.3em;
+}
+
+/* CUSTOM FORM FIELDS */
+
+.vSelectMultipleField {
+  vertical-align: top !important;
+}
+
+.vCheckboxField {
+  border: none;
+}
+
+.vDateField, .vTimeField {
+  margin-right: 0.15em;
+}
+
+.vURLField {
+  width: 30em;
+}
+
+.vLargeTextField, .vXMLLargeTextField {
+  width: 48em;
+}
+
+.flatpages-flatpage #id_content {
+  height: 40.2em;
+}
+
+.module table .vPositiveSmallIntegerField {
+  width: 2.2em;
+}
+
+.vTextField {
+  width: 20em;
+}
+
+.vIntegerField {
+  width: 5em;
+}
+
+.vForeignKeyRawIdAdminField {
+  width: 5em;
+}
+

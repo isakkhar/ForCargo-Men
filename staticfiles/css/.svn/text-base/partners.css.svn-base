@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+
+#partners {
+  clear: both;
+  display: inline;
+  padding: 0.7em;
+}
+
